@@ -3,29 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernantino</title>
+    <title>Makai Post</title>
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/main_layout.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/mobile.css" media="screen and (max-width:625px)">
+    <link rel="stylesheet" href="./assets/styles/monitor.css" media="screen and (min-width:625px)">
 
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function toggle_nav() {
+            console.log(toggle_nav);
+            if ($(window).width() < 625) {
+                $('nav').toggleClass('hidden')
+
+                toggle_menu_button()
+            } else {
+                $('nav').removeClass('hidden')
+            }
+        }
+        function set_nav_display() {
+            if ($(window).width() < 625) {
+                $('nav').addClass('hidden')
+            } else {
+                $('nav').removeClass('hidden')
+            }
+            
+            toggle_menu_button()
+        }
+        function toggle_menu_button() {
+            if ($('#menu').hasClass('hidden')) {
+                $('#menu-show-button').text('⋮')
+            } else {
+                $('#menu-show-button').text('✕')
+            }
+        }
+        $(document).ready(set_nav_display)
+        $(window).resize(set_nav_display)
+    </script>
 </head>
 <body>
     <header>
-        <div id="bar">
-            <h1>Lernantino</h1>
-            <nav>
-                <a href="#about-section">About Me</a>
-                <a href="#work-section">Work</a>
-                <a href="#contact-section">Contact Me</a>
-                <a href="#resume-section">Resume</a>
-            </nav>
-        </div>
+        <h1>Makai Post</h1>
+        <span id="menu-show-button" onclick="toggle_nav()">⋮</span>
+        <nav id="menu">
+            <a href="#about-section">About Me</a>
+            <a href="#work-section">Work</a>
+            <a href="#contact-section">Contact Me</a>
+            <a href="#resume-section" hidden>Resume</a>
+        </nav>
     </header>
 
     <div id="hero">
-        <div><h2>Cool subtitle here!</h2></div>
+        <div><h2>Software Engineer</h2></div>
     </div>
     
     <main>
@@ -41,35 +74,35 @@
         <section id="work-section" data-section-title="Work">
             <h4>Work</h4>
             <div class="content">
-                <a class="card" href="">
-                    <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_600,q_50,w_1660,x_3238,y_1815/v1/clients/pismobeachca/Surf_Report_6aee03cd-2fcb-405d-b420-3aaf79493e93.jpg" alt="">
+                <a class="card" href="https://tomakpo.github.io/UW_Coding_Bootcamp_Portfolio/projects/01-CodeRefactor/" target="_blank">
+                    <img src="./assets/images/cards/CodeRefactorImage.png" alt="Screenshot of website that was part of my project." style="object-position: 0 -4.5rem;">
                     <span>
                         <h4>Surf Report</h4>
                         <code>MERN Stack</code>
                     </span>
                 </a>
-                <a class="card" href="">
-                    <img src="https://www.newscaststudio.com/wp-content/uploads/2018/04/led-video-wall-close-up.jpg" alt="A wall of LED lights.">
+                <a class="card" href="#">
+                    <img src="https://static.sciencelearn.org.nz/images/images/000/002/583/original/BlueLEDLights_OPastukh123rf_18443633_watermarked.jpg?1522309392" alt="A wall of LED lights.">
                     <span>
                         <h4>LED Wall</h4>
                         <code>Node/IoT</code>
                     </span>
                 </a>
-                <a class="card" href="">
+                <a class="card" href="#">
                     <img src="https://images.pexels.com/photos/159804/accountant-accounting-adviser-advisor-159804.jpeg?cs=srgb&dl=pexels-pixabay-159804.jpg&fm=jpg" alt="">
                     <span>
                         <h4>Calculator</h4>
                         <code>React/JavaScript/CSS</code>
                     </span>
                 </a>
-                <a class="card" href="">
+                <a class="card" href="#">
                     <img src="https://cdn11.bigcommerce.com/s-do0ookap9x/images/stencil/1280x1280/products/19068/24202/apiaisnnc__79139.1530963491.jpg?c=2" alt="">
                     <span>
                         <h4>Pastel Puzzels</h4>
                         <code>MERN Stack</code>
                     </span>
                 </a>
-                <a class="card" href="">
+                <a class="card" href="#">
                     <img src="https://s.abcnews.com/images/Health/GTY_two_runners_as_151204_16x9_992.jpg" alt="">
                     <span>
                         <h4>Run Buddy</h4>
@@ -83,11 +116,11 @@
             <h4>Contact Me</h4>
             <div class="content">
                 <span>
-                    <a href="tel:+15555555555">555.555.5555</a>
-                    <a href="mailto:lernantino@website.com">lernantino@website.com</a>
-                    <a href="https://github.com/lernantino">GitHub</a>
-                    <a href="https://www.linkedin.com/in/lernantino/">Twitter</a>
-                    <a href="https://stackoverflow.com/users/5248224/lernantino">Spotify</a>
+                    <a href="tel:+12067450402">206.745.0402</a>
+                    <a href="mailto:post.makai@gmail.com">post.makai@gmail.com</a>
+                    <a href="https://github.com/ToMakPo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/makaipost/">LinkedIn</a>
+                    <a href="https://stackoverflow.com/users/5248324/tomakpo">Stack Overflow</a>
                 </span>
             </div>
         </section>

@@ -1,0 +1,87 @@
+header {
+  padding: 0.85rem 0;
+}
+
+header h1 {
+  padding: 0.35rem 1rem 0.35rem 7rem;
+  font-size: 4.5rem;
+}
+
+header #menu-show-button {
+  display: none;
+}
+
+header nav {
+  padding: 0.5rem;
+  margin: 0 1rem;
+}
+
+header nav a {
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+  border-bottom: 0.2rem solid #92ccce;
+}
+
+#hero {
+  height: 18.7rem;
+}
+
+#hero div h2 {
+  font-size: 2rem;
+  right: 0;
+  bottom: 2rem;
+  padding: 0.75rem;
+  background-color: #92ccce;
+  color: #31343d;
+}
+
+main > section {
+  margin: 3rem 0;
+  scroll-margin-top: 9rem;
+}
+
+main > section > h4 {
+  font-size: 4.5rem;
+  text-align: right;
+  width: 23rem;
+  padding: 0.5rem 2rem;
+}
+
+main > section .content {
+  width: calc(100% - 27rem);
+  padding: 0.5rem 2rem;
+  border-left: 0.3rem solid #445877;
+}
+
+main #work-section .content {
+  flex-flow: row wrap;
+}
+
+main #work-section .content .card {
+  width: calc(50% - 0.7rem);
+}
+
+main #work-section .content .card:active {
+  transform: scale(0.995);
+}
+
+main #work-section .content .card img {
+  filter: blur(1px) grayscale(50%);
+}
+
+main #work-section .content .card:hover img, main #work-section .content .card:focus img {
+  filter: blur(0px) grayscale(0%);
+}
+
+main #contact-section .content span {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main #contact-section .content span a {
+  font-size: 1.3rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.25rem;
+  border-bottom: 0.2rem solid #445877;
+}
