@@ -137,7 +137,8 @@ main #work-section .content .card > span {
   position: absolute;
   bottom: 1rem;
   left: 0;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   background: #92ccce;
   color: #31343d;
   padding: 0.5rem 1rem;
