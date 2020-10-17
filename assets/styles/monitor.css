@@ -1,10 +1,11 @@
 header {
   padding: 0.85rem 0;
+  flex-wrap: nowrap;
 }
 
 header h1 {
   padding: 0.35rem 1rem 0.35rem 7rem;
-  font-size: 4.5rem;
+  font-size: calc(min(5vw, 4.5rem));
 }
 
 header #menu-show-button {

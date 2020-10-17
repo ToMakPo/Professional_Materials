@@ -1,0 +1,94 @@
+header {
+  padding: 0.25rem 0;
+  background: red;
+}
+
+header h1 {
+  padding: 0.15rem 1rem;
+  padding-left: 3rem;
+  font-size: calc(clamp(1.5rem, 5vw, 4.5rem));
+}
+
+header #menu-show-button {
+  display: none;
+}
+
+header nav {
+  margin: 0 0.5rem;
+}
+
+header nav a {
+  border-bottom: calc(clamp(0rem, 0.3vw, 0.2rem)) solid #92ccce;
+  font-size: calc(clamp(1rem, 3vw, 1.3rem));
+}
+
+header nav a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+#hero {
+  height: 2.5rem;
+}
+
+#hero div h2 {
+  display: inline;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #92ccce;
+  color: #31343d;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+main > section {
+  margin: 2rem 0;
+  scroll-margin-top: 4rem;
+  flex-direction: column;
+  border-left: 0.3rem solid #445877;
+  padding: 0 0.5rem;
+}
+
+main > section > h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+}
+
+main > section .content {
+  padding: 0.5rem 0;
+  flex-flow: column nowrap;
+}
+
+main #work-section .content {
+  flex-flow: row wrap;
+}
+
+main #work-section .content .card {
+  width: calc(50% - 0.7rem);
+}
+
+main #work-section .content .card:active {
+  transform: scale(0.995);
+}
+
+main #work-section .content .card:hover, main #work-section .content .card:focus {
+  filter: drop-shadow(0rem 0.25rem 0.125rem #66666666);
+}
+
+main #contact-section .content span {
+  flex-flow: column wrap;
+  align-items: stretch;
+}
+
+main #contact-section .content span a {
+  background-color: #e0e0f0;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
+  border-right: 0.2rem solid #445877;
+}
