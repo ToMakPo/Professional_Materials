@@ -112,6 +112,11 @@ main #about-section ul li {
   margin-left: 1.75rem;
 }
 
+main #about-section #my-name {
+  color: #728aaf;
+  flex-wrap: 500;
+}
+
 main #work-section .content {
   display: flex;
 }
