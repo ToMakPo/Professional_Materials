@@ -22,6 +22,7 @@ Here is a [link to the live project](https://tomakpo.github.io/UWCB-02-Professio
 
 ## 🤟🏻 ATTRIBUTIONS
 ### Fonts
+All external fonts were provided by [Google Fonts](https://fonts.google.com/).
 - [Sora](https://fonts.google.com/specimen/Sora) - used in the heading tags
 
-### Icons
+<!-- ### Icons -->
