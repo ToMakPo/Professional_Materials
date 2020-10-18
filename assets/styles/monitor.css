@@ -36,6 +36,13 @@ header nav a {
   color: #31343d;
 }
 
+#hero #profile-image {
+  height: 90%;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+
 main > section {
   margin: 3rem 0;
   scroll-margin-top: 9rem;

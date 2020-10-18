@@ -40,6 +40,12 @@ header nav a:not(:first-child) {
   color: #31343d;
 }
 
+#hero #profile-image {
+  right: 1rem;
+  top: 0.5rem;
+  height: 6rem;
+}
+
 main {
   padding: 0 1rem;
 }

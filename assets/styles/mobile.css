@@ -41,7 +41,16 @@ header nav a {
   color: #31343d;
 }
 
+#hero #profile-image {
+  width: 90%;
+  top: 2.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 main {
+  position: relative;
+  top: 85vw;
   padding: 0 1rem;
 }
 
