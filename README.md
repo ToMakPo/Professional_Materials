@@ -20,6 +20,8 @@ Create a professional portfolio exhibiting samples of my deployed projects that 
 ## ⚔️ PROJECT
 Here is a [link to the live project](https://tomakpo.github.io/UWCB-02-Professional_Portfolio/).
 
+![Screen shot of website](./assets/images/screen_shot.png)
+
 ## 🤟🏻 ATTRIBUTIONS
 ### Fonts
 All external fonts were provided by [Google Fonts](https://fonts.google.com/).
