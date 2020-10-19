@@ -18,7 +18,7 @@ Create a professional portfolio exhibiting samples of my deployed projects that 
 - The display of the protfolio should be a responsive layout and adjust dynamicly depending on the screen size. 
 
 ## ⚔️ PROJECT
-Here is a [link to the live project](https://tomakpo.github.io/UWCB-02-Professional_Portfolio/).
+Here is a [link to the live project](https://tomakpo.github.io/UWCB-02-Responsive_Portfolio/).
 
 ![Screen shot of website](./assets/images/screen_shot.png)
 
