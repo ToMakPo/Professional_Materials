@@ -134,7 +134,7 @@ main #work-section .content .card:focus {
   outline: none;
 }
 
-main #work-section .content .card:first-child {
+main #work-section .content .card.highlight {
   width: 100%;
   min-height: 20rem;
 }
