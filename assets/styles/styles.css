@@ -144,10 +144,11 @@ main #work-section .content .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
   z-index: 1;
 }
 
-main #work-section .content .card > span {
+main #work-section .content .card .info {
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -159,8 +160,38 @@ main #work-section .content .card > span {
   z-index: 2;
 }
 
-main #work-section .content .card > span code {
+main #work-section .content .card .info code {
   font-family: monospace;
+}
+
+main #work-section .content .card:hover .repo-icon {
+  opacity: 100;
+}
+
+main #work-section .content .card .repo-icon {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  background-image: url(../images/repo_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #367578;
+  border-radius: 50%;
+  z-index: 3;
+  opacity: 0;
+}
+
+main #work-section .content .card .repo-icon:hover {
+  outline: none;
+  background-color: #46989b;
+}
+
+main #work-section .content .card .repo-icon:active {
+  background-color: #5db3b6;
 }
 
 main #contact-section .content span {
