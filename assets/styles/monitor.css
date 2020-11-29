@@ -49,9 +49,9 @@ main > section {
 }
 
 main > section > h4 {
-  font-size: 4.5rem;
+  font-size: calc(min(4.5rem, 3.5vw));
+  width: calc(min(23rem, 20vw));
   text-align: right;
-  width: 23rem;
   padding: 0.5rem 2rem;
 }
 
