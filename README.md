@@ -1,5 +1,5 @@
-# UWCB HW08 Professional Materials
-Homework assignment for **unit 8** of _UW Coding Bootcamp_.
+# Professional Portfolio
+Homework assignment for **unit 16** of _UW Coding Bootcamp_.
 ---
 ## 	🎯 GOAL
 Create a professional portfolio exhibiting samples of my deployed projects that can show my skills to potential employers.
